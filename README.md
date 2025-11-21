@@ -65,7 +65,15 @@ _⚠️ Not adhering to these submission rules and the [**Analytics Cup Rules**]
 ---
 
 ## Run Instructions
+The code in the main submission assumes the github repository was cloned as per the guidelines provided. The code should begin processing without error using Kloppy. The pipeline loads, processes, smoothes and computes the tracking data from all 10 matches. Given the size of the tracking dataset and the computational cost of the methods involved in this project, the full pipeline takes around 4 hours to complete. This is a limitation to the overall project. 
 
----
+The streamlit app has been deployed on the public Streamlit community cloud and is avaiable via then link below. The app takes some time to load when experimenting with different user selections but demonstrates the practical application of the results produced in this project. If running the Streamlit app locally, the 'skillcorner_x_pysport_events_with_phases_sample.parquet' and 'skillcorner.py' files must be downloaded. In you machine terminal, you should change to the working directory where the files are stored and follow these instructions:
+
+cd 'your_file_path'
+
+streamlit run skillcorner.py
+
+The requirementr.txt file details the required Python modules and packages
 
 ## [Optional] URL to Web App / Website
+https://analyticscupanalyst-k8nietzb6sza5pqne5jh92.streamlit.app/
