@@ -1,4 +1,12 @@
-# SkillCorner X PySport Analytics Cup
+# SkillCorner X PySport Analytics Cup - Stuart Macfarlane - Analyst Track
+
+This main. branch of the repositorty does contain a small sample of data extracted from my full full dataset which is fully download from the SkillCorner x PySport public repository. This samnple is only used to speed up loading and processing for the Streamlit web application as loading, processing, computing and visualising was too computationally expensive during user interaction with the app. 
+
+# Introduction/ Abstract
+
+<img width="1015" height="745" alt="image" src="https://github.com/user-attachments/assets/8078b850-dc92-4420-a9d2-d3a4ed9bef8e" />
+
+
 This repository contains the submission template for the SkillCorner X PySport Analytics Cup **Analyst Track**. 
 Your submission for the **Analyst Track** should be on the `main` branch of your own fork of this repository.
 
