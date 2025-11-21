@@ -2,67 +2,29 @@
 
 This main. branch of the repositorty does contain a small sample of data extracted from my full full dataset which is fully download from the SkillCorner x PySport public repository. This samnple is only used to speed up loading and processing for the Streamlit web application as loading, processing, computing and visualising was too computationally expensive during user interaction with the app. 
 
-# Introduction/ Abstract
-
-<img width="1015" height="745" alt="image" src="https://github.com/user-attachments/assets/8078b850-dc92-4420-a9d2-d3a4ed9bef8e" />
-
-
-This repository contains the submission template for the SkillCorner X PySport Analytics Cup **Analyst Track**. 
-Your submission for the **Analyst Track** should be on the `main` branch of your own fork of this repository.
-
-Find the Analytics Cup [**dataset**](https://github.com/SkillCorner/opendata/tree/master/data) and [**tutorials**](https://github.com/SkillCorner/opendata/tree/master/resources) on the [**SkillCorner Open Data Repository**](https://github.com/SkillCorner/opendata).
-
-## Submitting
-Make sure your `main` branch contains:
-
-1. A single Jupyter Notebook in the root of this repository called `submission.ipynb`
-    - This Juypter Notebook can not contain more than 2000 words.
-    - All other code should also be contained in this repository, but should be imported into the notebook from the `src` folder.
-
-
-or,
-
-
-1. A single Python file in the root of this repository called `main.py`
-    - This file should not contain more than 2000 words.
-    - All other code should also be contained in this repository, but should be imported into the notebook from the `src` folder.
-
-or, 
-
-
-1. A publicly accessible web app or website written in a language of your choice (e.g. Javascript)
-
-    - Your code should follow a clear and well defined structure.
-    - All other code should also be contained in this repository.
-    - The URL to the webapp should be included at the bottom of the read me under **URL to Web App / Website**
-
-
-2. An abstract of maximum 300 words that follows the **Analyst Track Abstract Template**.
-3. Add a URL to a screen recording video of maximum 60 seconds that shows your work. Add it under the **Video URL** Section below. (Use YouTube, or any other site to share this video).
-4. Submit your GitHub repository on the [Analytics Cup Pretalx page](https://pretalx.pysport.org)
-
-Finally:
-- Make sure your GitHub repository does **not** contain big data files. The tracking data should be loaded directly from the [Analytics Cup Data GitHub Repository](https://github.com/SkillCorner/opendata). For more information on how to load the data directly from GitHub please see this [Jupyter Notebook](https://github.com/SkillCorner/opendata/blob/master/resources/getting-started-skc-tracking-kloppy.ipynb).
-- Make sure the `submission.ipynb` notebook runs on a clean environment, or
-- Provide clear and concise instructions how to run the `main.py` (e.g. `streamlit run main.py`) if applicable in the **Run Instructions** Section below.
-- Providing a URL to a publically accessible webapp or website with a running version of your submission is mandatory when choosing to submit in a different language then Python, it is encouraged, but optional when submitting in Python.
-
-_⚠️ Not adhering to these submission rules and the [**Analytics Cup Rules**](https://pysport.org/analytics-cup/rules) may result in a point deduction or disqualification._
-
----
 
 ## Analyst Track Abstract Template (max. 300 words)
 #### Introduction
+Data analytics has undoubtedly revolutionised the way professional clubs operate in many aspects of business. This is especially true in terms of player recruitment when analytics can play an important role in identifying future potential talent and signings. Despite the exponential development of data analytics in football in recent years, a significant challenge has been to capture defensive off-the-ball behaviour which could be considered a crucial key performance indicator.
+
+	Previous approaches have utilised methods such as pitch control, a physics-based model, to determine how teams control space both in and out of possession (Spearman, 2018). The pitch control model has had a significant impact on the way teams approach tactical systems and has undoubtedly influenced football analytics in a positive manner. Whilst pitch control provides insight into team shape and cohesion, it is difficult to determine each player’s contribution to this. Therefore, the aim of this project was to develop a defensive metric which could quantify how much space a defending player ‘squeezes’ to minimise passing and dribbling opportunities for the opposition. 
+    
+	The approach to this task involved computing individual convex hull surface areas between the 3 closest teammates per player/ per frame when defending (only). The hypothesis of this research was that players with a lower surface area (and consequently team) would result in less attacking actions conceded. The results of this research are shown below. Figure 1 shows a strong correlation between low convex hull surface area and line breaking passes conceded at team level. Figure 2 shows an example of how these results could be applied in practical coaching setting. Furthermore, by quantifying this skill, it could be used in a holistic player evaluation process for recruitment purposes. Future research could expand the dataset and explore further data validation.
+
+<img width="1015" height="745" alt="image" src="https://github.com/user-attachments/assets/8078b850-dc92-4420-a9d2-d3a4ed9bef8e" />
+**Figure 1.**
+<img width="1126" height="818" alt="image" src="https://github.com/user-attachments/assets/04c97bf1-18e1-4409-af7a-f0e1332ead8e" />
+**Figure 2.**
 
 #### Usecase(s)
+This new defensive metric could be used as part of a hollistic evaluation process for player recruitment. By combining this metric with on-ball defensive and in-possession metrics, the quality of playern analysis could be significantly enhanced. Furthermore, the type of tool demonstrated in the Streamlit app could be used as a coaching cue to aid player tactical understanding and development. However, it should be noted that further validation is required. 
 
 #### Potential Audience
-
----
+Recruitment analysts, scouts, video analysts, data analysts and coaches.
 
 ## Video URL
 
----
+https://drive.google.com/file/d/1PAh0WwIu_ubbCNVhgnz1esFhZaN1jZqN/view?usp=sharing
 
 ## Run Instructions
 The code in the main submission assumes the github repository was cloned as per the guidelines provided. The code should begin processing without error using Kloppy. The pipeline loads, processes, smoothes and computes the tracking data from all 10 matches. Given the size of the tracking dataset and the computational cost of the methods involved in this project, the full pipeline takes around 4 hours to complete. This is a limitation to the overall project. 
