@@ -2,8 +2,6 @@
 
 This main. branch of the repositorty does contain a small sample of data extracted from my full full dataset which is fully download from the SkillCorner x PySport public repository. This samnple is only used to speed up loading and processing for the Streamlit web application as loading, processing, computing and visualising was too computationally expensive during user interaction with the app. 
 
-
-## Analyst Track Abstract Template (max. 300 words)
 #### Introduction
 Data analytics has undoubtedly revolutionised the way professional clubs operate in many aspects of business. This is especially true in terms of player recruitment when analytics can play an important role in identifying future potential talent and signings. Despite the exponential development of data analytics in football in recent years, a significant challenge has been to capture defensive off-the-ball behaviour which could be considered a crucial key performance indicator.
 
